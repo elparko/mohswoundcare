@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mohswoundcare/static/css/main.b3bd2894.css",
-    "main.js": "/mohswoundcare/static/js/main.92d7dea8.js",
+    "main.css": "/mohswoundcare/static/css/main.51e9d353.css",
+    "main.js": "/mohswoundcare/static/js/main.18d4f65f.js",
     "static/js/453.22d0a8eb.chunk.js": "/mohswoundcare/static/js/453.22d0a8eb.chunk.js",
     "index.html": "/mohswoundcare/index.html",
-    "main.b3bd2894.css.map": "/mohswoundcare/static/css/main.b3bd2894.css.map",
-    "main.92d7dea8.js.map": "/mohswoundcare/static/js/main.92d7dea8.js.map",
+    "main.51e9d353.css.map": "/mohswoundcare/static/css/main.51e9d353.css.map",
+    "main.18d4f65f.js.map": "/mohswoundcare/static/js/main.18d4f65f.js.map",
     "453.22d0a8eb.chunk.js.map": "/mohswoundcare/static/js/453.22d0a8eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3bd2894.css",
-    "static/js/main.92d7dea8.js"
+    "static/css/main.51e9d353.css",
+    "static/js/main.18d4f65f.js"
   ]
 }
