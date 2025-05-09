@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mohswoundcare/static/css/main.51e9d353.css",
-    "main.js": "/mohswoundcare/static/js/main.18d4f65f.js",
-    "static/js/453.22d0a8eb.chunk.js": "/mohswoundcare/static/js/453.22d0a8eb.chunk.js",
-    "index.html": "/mohswoundcare/index.html",
-    "main.51e9d353.css.map": "/mohswoundcare/static/css/main.51e9d353.css.map",
-    "main.18d4f65f.js.map": "/mohswoundcare/static/js/main.18d4f65f.js.map",
-    "453.22d0a8eb.chunk.js.map": "/mohswoundcare/static/js/453.22d0a8eb.chunk.js.map"
+    "main.css": "/static/css/main.51e9d353.css",
+    "main.js": "/static/js/main.b3b1e9b6.js",
+    "static/js/453.22d0a8eb.chunk.js": "/static/js/453.22d0a8eb.chunk.js",
+    "index.html": "/index.html",
+    "main.51e9d353.css.map": "/static/css/main.51e9d353.css.map",
+    "main.b3b1e9b6.js.map": "/static/js/main.b3b1e9b6.js.map",
+    "453.22d0a8eb.chunk.js.map": "/static/js/453.22d0a8eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.51e9d353.css",
-    "static/js/main.18d4f65f.js"
+    "static/js/main.b3b1e9b6.js"
   ]
 }
