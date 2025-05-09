@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import './App.css';
 
 // Import page components
@@ -63,7 +63,7 @@ const Footer = () => {
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <Header />
         <main className="main-content">
