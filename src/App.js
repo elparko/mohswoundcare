@@ -13,7 +13,6 @@ import InfectionInfo from './pages/InfectionInfo';
 import GeneralInfo from './pages/GeneralInfo/GeneralInfo';
 import FurtherReading from './pages/FurtherReading/FurtherReading';
 import AboutAuthor from './pages/AboutAuthor/AboutAuthor';
-import Quiz from './pages/Quiz/Quiz';
 
 // Header component with navigation
 const Header = () => {
@@ -38,7 +37,6 @@ const Header = () => {
             <li><Link to="/general-info">General Info</Link></li>
             <li><Link to="/further-reading">Further Reading</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/quiz">Quiz</Link></li>
           </ul>
         </nav>
       </div>
@@ -77,7 +75,6 @@ function App() {
             <Route path="/general-info" element={<GeneralInfo />} />
             <Route path="/further-reading" element={<FurtherReading />} />
             <Route path="/about" element={<AboutAuthor />} />
-            <Route path="/quiz" element={<Quiz />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
