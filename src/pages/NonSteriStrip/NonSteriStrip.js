@@ -22,93 +22,119 @@ const NonSteriStrip = () => {
         </p>
       </div>
 
-      <section className="care-section">
+      <section className="wound-care-steps">
         <h2>Daily Wound Care Instructions</h2>
         
-        <div className="care-step">
-          <h3>Step 1: Prepare your supplies</h3>
-          <p>Gather the following items before beginning wound care:</p>
-          <ul>
-            <li>Clean gloves (optional but recommended)</li>
-            <li>Mild soap (e.g., Dove, Cetaphil)</li>
-            <li>Cotton swabs (Q-tips)</li>
-            <li>Aquaphor healing ointment or petroleum jelly (Vaseline)</li>
-            <li>Non-stick dressing pads (e.g., Telfa)</li>
-            <li>Paper tape or other non-allergenic tape</li>
-            <li>Clean scissors (to cut dressing materials)</li>
-            <li>Small bowl with warm water</li>
-            <li>Clean washcloth or gauze</li>
-          </ul>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 2: Wash your hands</h3>
-          <p>
-            Thoroughly wash your hands with soap and warm water for at least 20 seconds. 
-            Dry with a clean towel before touching the wound or dressing materials.
-          </p>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 3: Remove the old dressing</h3>
-          <p>
-            Carefully remove the old dressing and tape. If the dressing sticks to the wound, 
-            moisten it with warm water to help release it gently. Avoid pulling or tearing 
-            the dressing off forcefully.
-          </p>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 4: Clean around the sutures</h3>
-          <p>
-            Using a cotton swab (Q-tip) dipped in warm soapy water, gently clean around 
-            the sutures and wound edges. Use a rolling motion to remove any dried blood, 
-            drainage, or old ointment.
-          </p>
-          <ul>
-            <li>Be gentle around the suture line to avoid disturbing the stitches</li>
-            <li>Use a fresh cotton swab for each pass to avoid recontaminating the area</li>
-            <li>Clean from the center of the wound outward</li>
-            <li>Rinse with clean water using a fresh cotton swab to remove soap residue</li>
-          </ul>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 5: Apply Aquaphor ointment</h3>
-          <p>
-            Using a clean cotton swab or clean fingertip, apply a thin layer of Aquaphor 
-            healing ointment over the entire suture line and wound area.
-          </p>
-          <div className="care-note">
-            <strong>Important:</strong> Keep the sutures and wound moist with Aquaphor at all times.
-            This promotes optimal healing and helps prevent scabbing, which can increase scarring.
+        <div className="step-by-step">
+          <div className="care-step">
+            <div className="step-number">1</div>
+            <div className="step-content">
+              <h3>Prepare your supplies</h3>
+              <p>Gather the following items before beginning wound care:</p>
+              <ul>
+                <li>Clean gloves (optional but recommended)</li>
+                <li>Mild soap (e.g., Dove, Cetaphil)</li>
+                <li>Cotton swabs (Q-tips)</li>
+                <li>Aquaphor healing ointment or petroleum jelly (Vaseline)</li>
+                <li>Non-stick dressing pads (e.g., Telfa)</li>
+                <li>Paper tape or other non-allergenic tape</li>
+                <li>Clean scissors (to cut dressing materials)</li>
+                <li>Small bowl with warm water</li>
+                <li>Clean washcloth or gauze</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 6: Cover with a non-stick dressing</h3>
-          <p>
-            Place a non-stick dressing pad (such as Telfa) over the wound, ensuring it covers 
-            the entire sutured area with a small margin around the edges. Cut the dressing to 
-            size if needed.
-          </p>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 7: Secure the dressing</h3>
-          <p>
-            Secure the dressing with paper tape or other recommended tape. The dressing should 
-            be secure but not too tight. Avoid using adhesive that causes skin irritation.
-          </p>
-        </div>
-        
-        <div className="care-step">
-          <h3>Step 8: Change dressing daily</h3>
-          <p>
-            Perform this wound care routine once daily, or more frequently if the dressing 
-            becomes wet, soiled, or saturated with drainage. Consistency is important for 
-            optimal healing.
-          </p>
+          
+          <div className="care-step">
+            <div className="step-number">2</div>
+            <div className="step-content">
+              <h3>Wash your hands</h3>
+              <p>
+                Thoroughly wash your hands with soap and warm water for at least 20 seconds. 
+                Dry with a clean towel before touching the wound or dressing materials.
+              </p>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">3</div>
+            <div className="step-content">
+              <h3>Remove the old dressing</h3>
+              <p>
+                Carefully remove the old dressing and tape. If the dressing sticks to the wound, 
+                moisten it with warm water to help release it gently. Avoid pulling or tearing 
+                the dressing off forcefully.
+              </p>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">4</div>
+            <div className="step-content">
+              <h3>Clean around the sutures</h3>
+              <p>
+                Using a cotton swab (Q-tip) dipped in warm soapy water, gently clean around 
+                the sutures and wound edges. Use a rolling motion to remove any dried blood, 
+                drainage, or old ointment.
+              </p>
+              <ul>
+                <li>Be gentle around the suture line to avoid disturbing the stitches</li>
+                <li>Use a fresh cotton swab for each pass to avoid recontaminating the area</li>
+                <li>Clean from the center of the wound outward</li>
+                <li>Rinse with clean water using a fresh cotton swab to remove soap residue</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">5</div>
+            <div className="step-content">
+              <h3>Apply Aquaphor ointment</h3>
+              <p>
+                Using a clean cotton swab or clean fingertip, apply a thin layer of Aquaphor 
+                healing ointment over the entire suture line and wound area.
+              </p>
+              <div className="care-note">
+                <strong>Important:</strong> Keep the sutures and wound moist with Aquaphor at all times.
+                This promotes optimal healing and helps prevent scabbing, which can increase scarring.
+              </div>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">6</div>
+            <div className="step-content">
+              <h3>Cover with a non-stick dressing</h3>
+              <p>
+                Place a non-stick dressing pad (such as Telfa) over the wound, ensuring it covers 
+                the entire sutured area with a small margin around the edges. Cut the dressing to 
+                size if needed.
+              </p>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">7</div>
+            <div className="step-content">
+              <h3>Secure the dressing</h3>
+              <p>
+                Secure the dressing with paper tape or other recommended tape. The dressing should 
+                be secure but not too tight. Avoid using adhesive that causes skin irritation.
+              </p>
+            </div>
+          </div>
+          
+          <div className="care-step">
+            <div className="step-number">8</div>
+            <div className="step-content">
+              <h3>Change dressing daily</h3>
+              <p>
+                Perform this wound care routine once daily, or more frequently if the dressing 
+                becomes wet, soiled, or saturated with drainage. Consistency is important for 
+                optimal healing.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
