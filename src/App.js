@@ -21,7 +21,10 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <Link to="/">Mohs Wound Care</Link>
+          <Link to="/">
+            <img src="/logo192.png" alt="Mohs Wound Care" className="logo-image" />
+            <span className="logo-text">Mohs Wound Care</span>
+          </Link>
         </div>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <label htmlFor="nav-toggle" className="nav-toggle-label">
