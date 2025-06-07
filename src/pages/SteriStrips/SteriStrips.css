@@ -17,6 +17,20 @@
     font-size: 1.1rem;
   }
   
+  .disclaimer-box {
+    background-color: #fff3e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #ff9800;
+  }
+  
+  .disclaimer-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bf360c;
+  }
+  
   .care-section {
     margin-bottom: 2.5rem;
   }
@@ -40,6 +54,32 @@
   
   .timeline-section {
     margin-bottom: 2.5rem;
+  }
+  
+  .timeline-categories {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .timeline-category {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid #1e88e5;
+  }
+  
+  .timeline-category h3 {
+    color: #1565c0;
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+  }
+  
+  .timeline-note {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
   }
   
   .timeline {
@@ -68,9 +108,11 @@
     background-color: #1e88e5;
   }
   
-  .timeline-item h3 {
+  .timeline-item h4 {
     color: #1565c0;
     margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.1rem;
   }
   
   .special-considerations {
@@ -99,6 +141,48 @@
   
   .consideration-item ul li {
     margin-bottom: 0.8rem;
+  }
+  
+  .removal-options {
+    margin-bottom: 2.5rem;
+  }
+  
+  .removal-methods {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .removal-method {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid #4caf50;
+  }
+  
+  .removal-method h3 {
+    color: #2e7d32;
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+  }
+  
+  .removal-method p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .removal-warning {
+    background-color: #fff8e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-left: 4px solid #ffc107;
+  }
+  
+  .removal-warning p {
+    margin: 0;
+    color: #e65100;
+    font-size: 0.95rem;
   }
   
   .warning-signs {

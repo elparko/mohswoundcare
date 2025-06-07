@@ -1,3 +1,25 @@
+
+  1. Just deploy: npm run deploy (recommended)
+    - This automatically runs npm run build first, then deploys to GitHub Pages
+  2. Build then deploy manually:
+    - npm run build (creates the build folder)
+    - npm run deploy (deploys the build folder)
+
+  The npm run deploy command handles everything automatically thanks to your predeploy script in package.json:22-23.
+
+  Normal Healing:
+  - healing-day3-5.jpg https://scarscenter.com/patient-case-studies/lower-leg-wound-dehiscence/
+  - healing-week1-2.jpg
+  - healing-week2-3.jpg
+  - healing-week4-plus.jpg
+
+  Infection Signs:
+  - infected-pus.jpg
+  - cellulitis.jpg
+  - necrotic-tissue.jpg
+  - poor-healing.jpg
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

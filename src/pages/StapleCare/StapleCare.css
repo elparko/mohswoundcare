@@ -17,6 +17,20 @@
     font-size: 1.1rem;
   }
   
+  .disclaimer-box {
+    background-color: #fff3e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #ff9800;
+  }
+  
+  .disclaimer-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bf360c;
+  }
+  
   .care-section {
     margin-bottom: 2.5rem;
   }
@@ -47,17 +61,49 @@
     margin-bottom: 0.5rem;
   }
   
-  .note-box {
-    background-color: #f5f5f5;
-    border-left: 4px solid #9e9e9e;
+  .care-note {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 4px;
   }
   
-  .note-box.warning {
-    background-color: #fff8e1;
-    border-left: 4px solid #ffc107;
+  .timeline-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .timeline {
+    margin-top: 1.5rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid #bbdefb;
+    position: relative;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #1e88e5;
+  }
+  
+  .timeline-item h4 {
+    color: #1565c0;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.1rem;
   }
   
   .special-considerations {
@@ -92,18 +138,46 @@
     margin-bottom: 2.5rem;
   }
   
-  .staple-removal h3 {
+  .removal-warning {
+    background-color: #fff8e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #ffc107;
+  }
+  
+  .removal-warning p {
+    margin: 0;
+    color: #e65100;
+    font-size: 0.95rem;
+  }
+  
+  .post-removal h3 {
     color: #1565c0;
     margin: 1.2rem 0 0.8rem;
   }
   
-  .staple-removal ul {
+  .post-removal ul {
     margin-left: 1.5rem;
     margin-top: 0.5rem;
   }
   
-  .staple-removal ul li {
-    margin-bottom: 0.5rem;
+  .post-removal ul li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .steri-strip-note {
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-left: 4px solid #2196f3;
+  }
+  
+  .steri-strip-note p {
+    margin: 0;
+    color: #1565c0;
+    font-size: 0.95rem;
   }
   
   .warning-signs {

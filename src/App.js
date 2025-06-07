@@ -10,6 +10,7 @@ import SteriStrips from './pages/SteriStrips';
 import NonSteriStrip from './pages/NonSteriStrip';
 import StapleCare from './pages/StapleCare';
 import InfectionInfo from './pages/InfectionInfo';
+import PainManagement from './pages/PainManagement';
 import GeneralInfo from './pages/GeneralInfo/GeneralInfo';
 import FurtherReading from './pages/FurtherReading/FurtherReading';
 import AboutAuthor from './pages/AboutAuthor/AboutAuthor';
@@ -34,6 +35,7 @@ const Header = () => {
             <li><Link to="/non-steri-strip">Non-Steri Strip</Link></li>
             <li><Link to="/staple-care">Staple Care</Link></li>
             <li><Link to="/infection-info">Infection Info</Link></li>
+            <li><Link to="/pain-management">Pain Management</Link></li>
             <li><Link to="/general-info">General Info</Link></li>
             <li><Link to="/further-reading">Further Reading</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -72,6 +74,7 @@ function App() {
             <Route path="/non-steri-strip" element={<NonSteriStrip />} />
             <Route path="/staple-care" element={<StapleCare />} />
             <Route path="/infection-info" element={<InfectionInfo />} />
+            <Route path="/pain-management" element={<PainManagement />} />
             <Route path="/general-info" element={<GeneralInfo />} />
             <Route path="/further-reading" element={<FurtherReading />} />
             <Route path="/about" element={<AboutAuthor />} />

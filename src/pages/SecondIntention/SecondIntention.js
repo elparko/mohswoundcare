@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 import './SecondIntention.css';
 
 const SecondIntention = () => {
+  const [imagesUnblurred, setImagesUnblurred] = React.useState(false);
+
+  const handleUnblurImages = () => {
+    setImagesUnblurred(true);
+  };
+
   return (
     <div className="page-container second-intention-page">
       <h1>Second Intention Healing</h1>
@@ -101,52 +107,291 @@ const SecondIntention = () => {
         </div>
       </section>
       
+      <section className="photo-examples">
+        <h2>Wound Healing Examples</h2>
+        <p>
+          These photos show examples of normal healing progression and signs of infection to help you 
+          understand what to expect and when to seek medical attention.
+        </p>
+        
+        {!imagesUnblurred && (
+          <div className="blur-notice">
+            <p>
+              <strong>Note:</strong> Medical images are blurred for sensitivity. 
+              <button 
+                className="unblur-button" 
+                onClick={handleUnblurImages}
+              >
+                Click here to view all images clearly
+              </button>
+            </p>
+          </div>
+        )}
+        
+        <div className="photo-category">
+          <h3>Normal Healing Progression</h3>
+          <p>These images show what healthy second intention healing typically looks like:</p>
+          
+          <div className="photo-grid">
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/healing-day3-5.jpg" 
+                alt="Day 3-5: Fresh wound with healthy pink edges"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder" style={{display: 'none'}}>
+                <span>Day 3-5: Fresh wound with healthy pink edges</span>
+              </div>
+              <p className="photo-caption">
+                Fresh wound with clean edges, minimal drainage, and healthy pink coloration
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/healing-week1-2.jpg" 
+                alt="Week 1-2: Granulation tissue forming"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder" style={{display: 'none'}}>
+                <span>Week 1-2: Granulation tissue forming</span>
+              </div>
+              <p className="photo-caption">
+                Healthy granulation tissue (bumpy, red tissue) filling the wound from bottom up
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/healing-week2-3.jpg" 
+                alt="Week 2-3: Wound contracting"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder" style={{display: 'none'}}>
+                <span>Week 2-3: Wound contracting</span>
+              </div>
+              <p className="photo-caption">
+                Wound edges pulling together, new skin growing from the sides
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/healing-week4-plus.jpg" 
+                alt="Week 4+: Nearly healed"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder" style={{display: 'none'}}>
+                <span>Week 4+: Nearly healed</span>
+              </div>
+              <p className="photo-caption">
+                Nearly complete closure with new pink skin
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="photo-category">
+          <h3>Signs of Infection - Seek Medical Attention</h3>
+          <p>These images show concerning signs that require prompt medical evaluation:</p>
+          
+          <div className="photo-grid">
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/infected-pus.jpg" 
+                alt="Infected wound with pus"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder warning" style={{display: 'none'}}>
+                <span>Infected wound with pus</span>
+              </div>
+              <p className="photo-caption">
+                Yellow or green pus, increased redness, and swelling around wound edges
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/cellulitis.jpg" 
+                alt="Spreading cellulitis"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder warning" style={{display: 'none'}}>
+                <span>Spreading cellulitis</span>
+              </div>
+              <p className="photo-caption">
+                Red streaks extending away from the wound, warm to touch
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/necrotic-tissue.jpg" 
+                alt="Necrotic tissue"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder warning" style={{display: 'none'}}>
+                <span>Necrotic tissue</span>
+              </div>
+              <p className="photo-caption">
+                Black or dark tissue that may indicate tissue death
+              </p>
+            </div>
+            
+            <div className="photo-item">
+              <img 
+                src="/images/wounds/poor-healing.jpg" 
+                alt="Poor healing"
+                className={imagesUnblurred ? '' : 'blurred'}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="photo-placeholder warning" style={{display: 'none'}}>
+                <span>Poor healing</span>
+              </div>
+              <p className="photo-caption">
+                Wound that appears larger, deeper, or unchanged after 2+ weeks
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="healing-timeline">
         <h2>What to Expect During Healing</h2>
         <p>
           Healing by second intention typically takes longer than wounds closed with sutures or other methods.
-          The timeline can vary widely depending on the size and location of your wound.
+          The timeline varies significantly based on the wound location, with lower leg wounds taking longer to heal 
+          due to reduced blood flow.
         </p>
         
-        <div className="timeline">
-          <div className="timeline-item">
-            <h3>Days 1-3</h3>
-            <p>
-              The wound may appear red and moist with some clear or slightly yellow drainage.
-              Some minor bleeding may occur. There may be mild discomfort or tenderness.
+        <div className="timeline-categories">
+          <div className="timeline-category">
+            <h3>Lower Leg Wounds (3 Month Timeline)</h3>
+            <p className="timeline-note">
+              Lower leg wounds heal more slowly due to reduced circulation and gravity effects.
             </p>
+            
+            <div className="timeline">
+              <div className="timeline-item">
+                <h4>Days 1-7</h4>
+                <p>
+                  The wound may appear red and moist with some drainage. Some minor bleeding may occur. 
+                  Expect mild discomfort or tenderness.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 1-2</h4>
+                <p>
+                  The wound begins to fill in from the bottom. You may notice a decrease in drainage.
+                  The wound edges may appear pink or red.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 3-6</h4>
+                <p>
+                  Healthy granulation tissue begins to form. The wound continues to fill in slowly
+                  and may begin to contract (edges pulling inward).
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 6-10</h4>
+                <p>
+                  Continued filling and contraction. New skin begins to grow inward from
+                  the edges of the wound (re-epithelialization).
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 10-12</h4>
+                <p>
+                  Final healing stages with continued remodeling of scar tissue. Complete closure
+                  typically occurs by 3 months.
+                </p>
+              </div>
+            </div>
           </div>
           
-          <div className="timeline-item">
-            <h3>Days 4-7</h3>
-            <p>
-              The wound begins to fill in from the bottom. You may notice a decrease in drainage.
-              The wound edges may appear pink or red, which is a sign of healthy healing.
+          <div className="timeline-category">
+            <h3>Other Body Areas (6 Week Timeline)</h3>
+            <p className="timeline-note">
+              Wounds on the face, arms, trunk, and upper legs typically heal faster due to better blood supply.
             </p>
-          </div>
-          
-          <div className="timeline-item">
-            <h3>Weeks 1-2</h3>
-            <p>
-              Healthy granulation tissue (pink/red tissue with a grainy appearance) begins to form.
-              The wound continues to fill in and may begin to contract (edges pulling inward).
-            </p>
-          </div>
-          
-          <div className="timeline-item">
-            <h3>Weeks 3-4</h3>
-            <p>
-              The wound continues to fill in and contract. New skin begins to grow inward from
-              the edges of the wound (re-epithelialization).
-            </p>
-          </div>
-          
-          <div className="timeline-item">
-            <h3>Weeks 4+</h3>
-            <p>
-              Continued healing and remodeling of scar tissue. The timeline for complete closure 
-              varies based on wound size and location.
-            </p>
+            
+            <div className="timeline">
+              <div className="timeline-item">
+                <h4>Days 1-3</h4>
+                <p>
+                  The wound may appear red and moist with some clear or slightly yellow drainage.
+                  Some minor bleeding may occur. There may be mild discomfort or tenderness.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Days 4-7</h4>
+                <p>
+                  The wound begins to fill in from the bottom. You may notice a decrease in drainage.
+                  The wound edges may appear pink or red, which is a sign of healthy healing.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 1-2</h4>
+                <p>
+                  Healthy granulation tissue (pink/red tissue with a grainy appearance) begins to form.
+                  The wound continues to fill in and may begin to contract (edges pulling inward).
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 3-4</h4>
+                <p>
+                  The wound continues to fill in and contract. New skin begins to grow inward from
+                  the edges of the wound (re-epithelialization).
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Weeks 4-6</h4>
+                <p>
+                  Final healing stages with continued remodeling of scar tissue. Most wounds
+                  achieve complete closure by 6 weeks.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

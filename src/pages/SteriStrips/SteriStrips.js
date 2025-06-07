@@ -16,29 +16,35 @@ const SteriStrips = () => {
         </p>
       </div>
 
+      <div className="disclaimer-box">
+        <p>
+          <strong>Important:</strong> Always follow the specific instructions given by your healthcare provider. 
+          These guidelines are general recommendations and may need to be modified based on your individual situation.
+        </p>
+      </div>
+
       <section className="care-section">
         <h2>Steri-Strips Care Instructions</h2>
         
         <div className="care-step">
-          <h3>Keep Steri-Strips in place</h3>
+          <h3>Keep Steri-Strips in place for 7 days</h3>
           <p>
-            Allow the Steri-Strips to remain in place until they fall off on their own or until your 
-            healthcare provider removes them (typically 7-14 days after application). Do not remove 
-            them yourself unless specifically instructed to do so by your doctor.
+            Leave the Steri-Strips in place for 7 days. Do not remove them yourself during this time 
+            unless specifically instructed to do so by your healthcare provider.
           </p>
         </div>
         
         <div className="care-step">
-          <h3>Keep the area clean and dry</h3>
+          <h3>Keep Steri-Strips dry</h3>
           <p>
-            For the first 24-48 hours: Keep the wound and Steri-Strips completely dry. 
-            Cover with plastic when showering if needed.
+            It's important to keep the Steri-Strips dry to maintain their adhesion and effectiveness:
           </p>
-          <p>
-            After 48 hours: You may shower and allow water to run over the Steri-Strips, but do not 
-            soak them (avoid baths, swimming pools, hot tubs, etc.). Pat the area dry gently after 
-            showering – do not rub.
-          </p>
+          <ul>
+            <li>After showering, gently pat the Steri-Strips dry with a clean towel</li>
+            <li>You may use a hair dryer on cool setting to blow-dry them completely</li>
+            <li>Avoid soaking in baths, swimming pools, or hot tubs</li>
+            <li>Cover with plastic wrap if needed when showering</li>
+          </ul>
         </div>
         
         <div className="care-step">
@@ -74,38 +80,84 @@ const SteriStrips = () => {
       
       <section className="timeline-section">
         <h2>What to Expect</h2>
+        <p>
+          Healing timelines vary by location due to differences in blood supply and skin thickness. 
+          Facial wounds typically heal faster than wounds on other parts of the body.
+        </p>
         
-        <div className="timeline">
-          <div className="timeline-item">
-            <h3>Days 1-2</h3>
-            <p>
-              The wound area may appear pink or red with some mild swelling. Mild discomfort is normal 
-              and can usually be managed with acetaminophen (Tylenol) if needed. Keep the area completely dry.
+        <div className="timeline-categories">
+          <div className="timeline-category">
+            <h3>Facial Wounds (1 Week Timeline)</h3>
+            <p className="timeline-note">
+              Face and neck wounds heal faster due to excellent blood supply and thinner skin.
             </p>
+            
+            <div className="timeline">
+              <div className="timeline-item">
+                <h4>Days 1-2</h4>
+                <p>
+                  The wound area may appear pink or red with some mild swelling. Mild discomfort is normal.
+                  Keep the area completely dry.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Days 3-5</h4>
+                <p>
+                  Redness and swelling should begin to decrease rapidly. The edges of the Steri-Strips may 
+                  begin to curl, which is normal.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Days 5-7</h4>
+                <p>
+                  Steri-Strips can typically be removed after 5-7 days as instructed by your provider. 
+                  The wound should appear well-closed.
+                </p>
+              </div>
+            </div>
           </div>
           
-          <div className="timeline-item">
-            <h3>Days 3-7</h3>
-            <p>
-              Redness and swelling should begin to decrease. The edges of the Steri-Strips may begin to curl, 
-              which is normal. You may shower and allow water to run over the area, but continue to pat dry gently.
+          <div className="timeline-category">
+            <h3>Other Body Areas (2-3 Week Timeline)</h3>
+            <p className="timeline-note">
+              Wounds on arms, legs, trunk, and back require longer healing time due to increased movement and varying blood supply.
             </p>
-          </div>
-          
-          <div className="timeline-item">
-            <h3>Days 7-14</h3>
-            <p>
-              Steri-Strips will usually begin to fall off on their own. Do not pull them off prematurely. 
-              The wound should appear closed with a thin scab line forming along the incision.
-            </p>
-          </div>
-          
-          <div className="timeline-item">
-            <h3>After 14 days</h3>
-            <p>
-              If Steri-Strips haven't fallen off after 14 days, consult your healthcare provider. They may 
-              instruct you to gently remove them or may remove them at your follow-up appointment.
-            </p>
+            
+            <div className="timeline">
+              <div className="timeline-item">
+                <h4>Days 1-3</h4>
+                <p>
+                  The wound area may appear pink or red with some mild swelling. Mild discomfort is normal 
+                  and can usually be managed with acetaminophen (Tylenol) if needed.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Days 4-7</h4>
+                <p>
+                  Redness and swelling should begin to decrease. The edges of the Steri-Strips may begin to curl, 
+                  which is normal. You may shower and allow water to run over the area.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>Days 7-14</h4>
+                <p>
+                  Steri-Strips will usually begin to fall off on their own or can be removed as instructed. 
+                  The wound should appear closed with a thin line forming along the incision.
+                </p>
+              </div>
+              
+              <div className="timeline-item">
+                <h4>At 2 Weeks (Day 14)</h4>
+                <p>
+                  If Steri-Strips haven't fallen off by 2 weeks, they should be removed at this time. 
+                  Use the removal methods described below if instructed by your provider.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -161,6 +213,39 @@ const SteriStrips = () => {
         </div>
       </section>
       
+      <section className="removal-options">
+        <h2>Steri-Strip Removal</h2>
+        <p>
+          If your healthcare provider has instructed you to remove the Steri-Strips at home, or if they 
+          haven't fallen off naturally by 2 weeks, you have two safe removal options:
+        </p>
+        
+        <div className="removal-methods">
+          <div className="removal-method">
+            <h3>Option 1: Water Method</h3>
+            <p>
+              Gently wet the Steri-Strips with warm water to soften the adhesive. Once they're thoroughly 
+              wet, they should peel off easily without pulling on the skin.
+            </p>
+          </div>
+          
+          <div className="removal-method">
+            <h3>Option 2: Adhesive Dissolver</h3>
+            <p>
+              Use a gentle adhesive dissolver (available at pharmacies) to safely dissolve the adhesive. 
+              Apply the dissolver according to package instructions and allow the Steri-Strips to lift off naturally.
+            </p>
+          </div>
+        </div>
+        
+        <div className="removal-warning">
+          <p>
+            <strong>Important:</strong> Never pull or forcibly remove Steri-Strips as this can damage the healing skin 
+            and potentially reopen the wound. Always follow your provider's specific instructions for removal timing.
+          </p>
+        </div>
+      </section>
+
       <section className="warning-signs">
         <h2>Warning Signs</h2>
         <div className="warning-box">

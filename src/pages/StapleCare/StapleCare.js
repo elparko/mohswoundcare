@@ -10,86 +10,151 @@ const StapleCare = () => {
       
       <div className="intro-box">
         <p>
-          Your Mohs surgery wound has been closed with surgical staples. Staples are often used 
-          for wounds in areas with high tension or where secure closure is needed. This page 
+          Your wound has been closed with surgical staples. Staples provide strong, secure closure 
+          for wounds and are commonly used on the scalp, back, chest, arms, and legs. This page 
           provides guidance on how to properly care for your stapled wound to ensure optimal healing.
         </p>
       </div>
 
+      <div className="disclaimer-box">
+        <p>
+          <strong>Important:</strong> Always follow the specific instructions given by your healthcare provider. 
+          These guidelines are general recommendations and may need to be modified based on your individual situation.
+        </p>
+      </div>
+
       <section className="care-section">
-        <h2>Stapled Wound Care Instructions</h2>
+        <h2>Daily Staple Care Instructions</h2>
         
         <div className="care-step">
-          <h3>Keep the area clean</h3>
+          <h3>Step 1: Prepare your supplies</h3>
+          <p>Gather the following items before beginning wound care:</p>
+          <ul>
+            <li>Clean gloves (optional but recommended)</li>
+            <li>Mild soap (e.g., Dove, Cetaphil)</li>
+            <li>Cotton swabs (Q-tips)</li>
+            <li>Aquaphor healing ointment or petroleum jelly (Vaseline)</li>
+            <li>Non-stick dressing pads (e.g., Telfa) - if needed</li>
+            <li>Paper tape or other non-allergenic tape</li>
+            <li>Clean washcloth or gauze</li>
+            <li>Small bowl with warm water</li>
+          </ul>
+        </div>
+        
+        <div className="care-step">
+          <h3>Step 2: Wash your hands</h3>
           <p>
-            For the first 24-48 hours: Keep the wound and staples completely dry. 
-            Cover with plastic when showering if needed.
-          </p>
-          <p>
-            After 48 hours: You may shower and allow water to run over the staples, but do not 
-            soak them (avoid baths, swimming pools, hot tubs, etc.). Pat the area dry gently after 
-            showering – do not rub.
+            Thoroughly wash your hands with soap and warm water for at least 20 seconds. 
+            Dry with a clean towel before touching the wound or dressing materials.
           </p>
         </div>
         
         <div className="care-step">
-          <h3>Cleaning the stapled area</h3>
+          <h3>Step 3: Remove old dressing (if present)</h3>
           <p>
-            Once permitted to get the wound wet (typically after 24-48 hours):
+            If your wound is covered with a dressing, carefully remove it. If the dressing 
+            sticks, moisten it with warm water to help release it gently.
           </p>
-          <ol>
-            <li>Wash your hands thoroughly before touching the wound area</li>
-            <li>
-              Gently clean around the staples with mild soap and water. Use a clean washcloth 
-              or gauze and light pressure.
-            </li>
-            <li>
-              Rinse thoroughly to remove all soap, which can be irritating if left on the skin
-            </li>
-            <li>Pat the area dry gently with a clean towel or gauze</li>
-          </ol>
-          <div className="note-box">
-            <p>
-              <strong>Important:</strong> Do not scrub or rub the stapled area. Clean with gentle motions 
-              to avoid disturbing the staples or the wound.
-            </p>
+        </div>
+        
+        <div className="care-step">
+          <h3>Step 4: Clean around the staples</h3>
+          <p>
+            Using a cotton swab (Q-tip) dipped in warm soapy water, gently clean around 
+            the staples and wound edges. Use a rolling motion to remove any dried blood, 
+            drainage, or old ointment.
+          </p>
+          <ul>
+            <li>Be very gentle around the staples to avoid disturbing them</li>
+            <li>Use a fresh cotton swab for each pass to avoid recontamination</li>
+            <li>Clean from the center of the wound outward</li>
+            <li>Rinse with clean water using a fresh cotton swab to remove soap residue</li>
+            <li>Pat dry gently with clean gauze</li>
+          </ul>
+        </div>
+        
+        <div className="care-step">
+          <h3>Step 5: Apply Aquaphor ointment</h3>
+          <p>
+            Using a clean cotton swab, apply a thin layer of Aquaphor healing ointment 
+            along the staple line and wound area. Be careful not to get ointment directly 
+            on the metal staples.
+          </p>
+          <div className="care-note">
+            <strong>Important:</strong> Keep the stapled wound moist with Aquaphor to promote 
+            optimal healing and prevent scabbing.
           </div>
         </div>
         
         <div className="care-step">
-          <h3>Applying ointment and dressing</h3>
+          <h3>Step 6: Cover if needed</h3>
           <p>
-            Follow your healthcare provider's specific instructions regarding ointment and dressing. 
-            Typically, you may be instructed to:
+            Depending on your provider's instructions and the wound location, you may need 
+            to cover the staples with a non-stick dressing. This is especially important for:
           </p>
-          <ol>
-            <li>
-              Apply a thin layer of antibiotic ointment or petroleum jelly along the staple line
-              using a clean cotton swab (not directly over the staples)
-            </li>
-            <li>
-              Cover with a non-stick dressing (such as Telfa) if directed by your doctor
-            </li>
-            <li>
-              Secure with paper tape or other hypoallergenic tape
-            </li>
-          </ol>
+          <ul>
+            <li>Wounds that may rub against clothing</li>
+            <li>Areas prone to contamination</li>
+            <li>Wounds with ongoing drainage</li>
+          </ul>
           <p>
-            Change the dressing daily or when it becomes wet or soiled, following your doctor's 
-            specific instructions.
+            Many stapled wounds can be left uncovered once initial healing begins, 
+            following your provider's specific guidance.
           </p>
         </div>
         
         <div className="care-step">
-          <h3>Leave staples in place</h3>
+          <h3>Step 7: Leave staples in place</h3>
           <p>
-            Do not attempt to remove or adjust the staples yourself. Staples are typically removed 
-            by your healthcare provider after 7-14 days, depending on the wound location and your 
-            individual healing process.
+            Do not attempt to remove or adjust the staples yourself. Staples will be removed 
+            by your healthcare provider, typically after 7-14 days depending on the wound 
+            location and your healing progress.
           </p>
         </div>
       </section>
-      
+
+      <section className="timeline-section">
+        <h2>What to Expect During Healing</h2>
+        <p>
+          Stapled wounds typically heal well with proper care. The timeline for staple removal varies 
+          based on the wound location and your individual healing process.
+        </p>
+        
+        <div className="timeline">
+          <div className="timeline-item">
+            <h4>Days 1-3</h4>
+            <p>
+              Some swelling, redness, and mild discomfort around the staples is normal. The wound may have 
+              minimal drainage. You may feel tightness or pulling sensation from the staples.
+            </p>
+          </div>
+          
+          <div className="timeline-item">
+            <h4>Days 4-7</h4>
+            <p>
+              Swelling and redness should begin to decrease. The staple line should appear 
+              well-approximated. Continue daily wound care as instructed.
+            </p>
+          </div>
+          
+          <div className="timeline-item">
+            <h4>Days 7-10</h4>
+            <p>
+              For some wounds, staples may be ready for removal. Your healthcare provider will 
+              assess healing progress and determine the appropriate timing.
+            </p>
+          </div>
+          
+          <div className="timeline-item">
+            <h4>Days 10-14</h4>
+            <p>
+              Most stapled wounds are ready for staple removal by this time. Some areas with 
+              higher tension may require staples to remain longer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="special-considerations">
         <h2>Special Considerations for Staples</h2>
         
@@ -148,32 +213,46 @@ const StapleCare = () => {
           may cause brief, mild discomfort.
         </p>
         
-        <div className="note-box">
+        <div className="removal-warning">
           <p>
             <strong>Important:</strong> Do not miss your staple removal appointment. Leaving staples
-            in too long can make them more difficult to remove and may lead to unwanted scarring.
+            in too long can make them more difficult to remove and may lead to unwanted scarring or 
+            tissue reaction around the staples.
           </p>
         </div>
         
-        <h3>After Staple Removal</h3>
-        <p>
-          After your staples are removed:
-        </p>
-        <ul>
-          <li>
-            Your healthcare provider may apply Steri-Strips to provide additional support 
-            during continued healing
-          </li>
-          <li>
-            Continue gentle wound care as directed by your healthcare provider
-          </li>
-          <li>
-            Resume normal activities gradually, following your provider's guidance
-          </li>
-          <li>
-            Begin scar care once the wound is fully healed (usually 2-3 weeks after staple removal)
-          </li>
-        </ul>
+        <div className="post-removal">
+          <h3>After Staple Removal</h3>
+          <p>
+            After your staples are removed by your healthcare provider:
+          </p>
+          <ul>
+            <li>
+              <strong>Steri-Strip application:</strong> Your provider may apply Steri-Strips over 
+              the healed incision to provide additional support during continued healing
+            </li>
+            <li>
+              <strong>Wound care:</strong> Continue gentle wound care as directed, usually with 
+              continued Aquaphor application for 1-2 weeks
+            </li>
+            <li>
+              <strong>Activity:</strong> Resume normal activities gradually, following your 
+              provider's specific guidance
+            </li>
+            <li>
+              <strong>Scar care:</strong> Begin scar massage and sun protection once the wound 
+              is fully healed (usually 2-3 weeks after staple removal)
+            </li>
+          </ul>
+          
+          <div className="steri-strip-note">
+            <p>
+              <strong>Note about Steri-Strips:</strong> If your provider applies Steri-Strips after 
+              staple removal, follow the <Link to="/steri-strips" className="text-link">Steri-Strip care instructions</Link> 
+              for proper maintenance and removal.
+            </p>
+          </div>
+        </div>
       </section>
       
       <section className="warning-signs">
