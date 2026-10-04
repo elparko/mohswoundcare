@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.6d75ff7d.css",
-    "main.js": "./static/js/main.3df067ef.js",
-    "static/js/453.22d0a8eb.chunk.js": "./static/js/453.22d0a8eb.chunk.js",
-    "index.html": "./index.html",
-    "main.6d75ff7d.css.map": "./static/css/main.6d75ff7d.css.map",
-    "main.3df067ef.js.map": "./static/js/main.3df067ef.js.map",
-    "453.22d0a8eb.chunk.js.map": "./static/js/453.22d0a8eb.chunk.js.map"
+    "main.css": "/static/css/main.1e5e8d8c.css",
+    "main.js": "/static/js/main.db911f91.js",
+    "static/media/inter-latin-700-normal.woff": "/static/media/inter-latin-700-normal.c73ae7252669254d2588.woff",
+    "static/media/inter-latin-600-normal.woff": "/static/media/inter-latin-600-normal.f10265da6bd8d66999ac.woff",
+    "static/media/inter-latin-400-normal.woff": "/static/media/inter-latin-400-normal.2ea1079c0069eb040a52.woff",
+    "static/media/source-serif-4-latin-600-normal.woff": "/static/media/source-serif-4-latin-600-normal.1fa3c140bffa465b8e6f.woff",
+    "static/media/inter-latin-600-normal.woff2": "/static/media/inter-latin-600-normal.69a8d1d484967aba2389.woff2",
+    "static/media/inter-latin-700-normal.woff2": "/static/media/inter-latin-700-normal.1104236696a5d2d1f236.woff2",
+    "static/media/inter-latin-400-normal.woff2": "/static/media/inter-latin-400-normal.eca1e21531598d5db58f.woff2",
+    "static/media/source-serif-4-latin-600-normal.woff2": "/static/media/source-serif-4-latin-600-normal.63162eec71e4dfe248c2.woff2",
+    "index.html": "/index.html",
+    "main.1e5e8d8c.css.map": "/static/css/main.1e5e8d8c.css.map",
+    "main.db911f91.js.map": "/static/js/main.db911f91.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d75ff7d.css",
-    "static/js/main.3df067ef.js"
+    "static/css/main.1e5e8d8c.css",
+    "static/js/main.db911f91.js"
   ]
 }
