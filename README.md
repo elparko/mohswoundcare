@@ -1,92 +1,44 @@
+# Mohs Wound Care
 
+Plain-language wound care instructions for patients after Mohs surgery, with a cited source for every medical
+statement. Live at [mohswoundcare.com](https://mohswoundcare.com).
 
-# Getting Started with Create React App
+Written for older adults: large type, a text-size control, high contrast, single-click navigation, printable pages,
+and a reading level around 6th grade.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pages
 
-## Available Scripts
+| Path | Content |
+| --- | --- |
+| `/` | Choose your wound type, warning signs |
+| `/first-48-hours` | First bandage, bleeding, medicines, swelling |
+| `/stitches`, `/tape-strips`, `/staples`, `/skin-graft`, `/open-wound` | Daily care by closure type |
+| `/warning-signs` | Call 911 / call surgeon today / normal, infection |
+| `/pain` | Acetaminophen and ibuprofen dosing and safety |
+| `/scars-and-sun` | Scar changes, sun protection, skin checks |
+| `/daily-life` | Activity, showering, sleep, smoking, eating |
+| `/resources` | Patient links from medical societies and agencies |
+| `/about` | Author, sourcing policy, privacy, contact |
 
-In the project directory, you can run:
+Old hash links (`/#/steri-strips`) and old paths (`/steri-strips`) redirect to the new pages.
 
-### `npm start`
+## How citations work
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Every source lives in `src/content/sources.js` (id, citation, URL).
+- In a page, `<Cite id="smack-1996" />` or `<Cite id={['a', 'b']} />` adds a numbered link.
+- Numbers follow the order of first use on each page, and the page's source list is built from them.
+- An unknown id throws, so a bad citation fails the tests and the page render.
+- The shared warning lists are in `src/components/WhenToCall.js`.
+- Update `LAST_REVIEWED` in `src/content/site.js` after each content review.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Commands
 
-### `npm test`
+```sh
+npm install
+npm start          # dev server on http://localhost:3000
+npm test           # renders every page, checks every citation and redirect
+npm run build      # production build in build/
+npm run deploy     # builds and publishes build/ to the gh-pages branch
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-  1. Just deploy: npm run deploy (recommended)
-    - This automatically runs npm run build first, then deploys to GitHub Pages
-  2. Build then deploy manually:
-    - npm run build (creates the build folder)
-    - npm run deploy (deploys the build folder)
-
-  The npm run deploy command handles everything automatically thanks to your predeploy script in package.json:22-23.
-
-  Normal Healing:
-  - healing-day3-5.jpg https://scarscenter.com/patient-case-studies/lower-leg-wound-dehiscence/
-  - healing-week1-2.jpg
-  - healing-week2-3.jpg
-  - healing-week4-plus.jpg
-
-  Infection Signs:
-  - infected-pus.jpg
-  - cellulitis.jpg
-  - necrotic-tissue.jpg
-  - poor-healing.jpg
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`public/CNAME` keeps the custom domain. `public/404.html` sends deep links back to the app on GitHub Pages.
