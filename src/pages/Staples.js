@@ -93,8 +93,8 @@ export default function Staples() {
 
       <h2>Activity</h2>
       <p>
-        Avoid anything that could pull the wound open. For 1 to 2 weeks, avoid hard exercise, heavy lifting, and bending
-        over. Surgeons give different limits, so follow yours.
+        Avoid anything that could pull the wound open. For 1 to 2 weeks, avoid hard exercise, lifting more than 10
+        pounds, and bending with your head below your waist. Surgeons give different limits, so follow yours.
         <Cite id={['alberta-staples-healthwise', 'dartmouth-mohs-handbook', 'erickson-2022-periop-survey']} /> See{' '}
         <Link to="/daily-life">Daily life</Link>.
       </p>

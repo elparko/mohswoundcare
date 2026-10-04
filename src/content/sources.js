@@ -407,6 +407,10 @@ const SOURCES = {
     cite: 'Diana DZ, Leon HK, Darrell R. The low prevalence of allergic contact dermatitis using a petrolatum ointment containing lanolin alcohol. J Drugs Dermatol. 2019;18(10):1002-1004.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/31584778/',
   },
+  'metrolina-sih': {
+    cite: 'Metrolina Dermatology (Mohs surgery practice). Post-operative Wound Care Instructions: Second Intention Healing. Patient handout.',
+    url: 'https://metrolinadermatology.com/storage/forms/metrolinadermatology/Post-op-wound-care-second-intention-healing5385.pdf',
+  },
 };
 
 export default SOURCES;

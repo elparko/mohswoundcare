@@ -146,6 +146,45 @@ export default function OpenWound() {
         Keep doing your daily care until new skin covers the whole wound. Your surgeon will check how it is healing.
       </p>
 
+      <h2>What you may see</h2>
+      <div className="compare">
+        <div className="box note">
+          <h3>Usually normal</h3>
+          <ul>
+            <li>
+              Red, bumpy tissue filling in the wound from the bottom. This is new tissue called granulation tissue.
+              <Cite id="potluru-2025-sih-review" />
+            </li>
+            <li>
+              A thin yellow or white film on the bottom of the wound. This is fibrin, part of normal healing. It may not
+              wipe off. Leave it alone and do not scrub it.
+              <Cite id="metrolina-sih" />
+            </li>
+            <li>
+              A little clear, yellow, or orange fluid on the bandage.
+              <Cite id="metrolina-sih" />
+            </li>
+          </ul>
+        </div>
+        <div className="box warn">
+          <h3>Call your surgeon</h3>
+          <ul>
+            <li>
+              Thick, cloudy fluid, or pus.
+              <Cite id={['metrolina-sih', 'mp-wound-closed']} />
+            </li>
+            <li>
+              A bad smell, with redness, warmth, or pain that is getting worse.
+              <Cite id={['mp-wound-closed', 'mp-ssi']} />
+            </li>
+            <li>
+              The wound gets bigger or deeper.
+              <Cite id="mp-wound-closed" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <h2>What to expect</h2>
       <ul className="timeline">
         <li>

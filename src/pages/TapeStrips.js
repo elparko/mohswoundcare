@@ -92,8 +92,8 @@ export default function TapeStrips() {
 
       <h2>Activity</h2>
       <p>
-        Avoid hard exercise, heavy lifting, and bending over for 1 to 2 weeks. These can pull on the wound. Surgeons
-        give different limits, so follow yours.
+        For 1 to 2 weeks, avoid hard exercise, lifting more than 10 pounds, and bending with your head below your waist.
+        These can pull on the wound. Surgeons give different limits, so follow yours.
         <Cite id={['dartmouth-mohs-handbook', 'erickson-2022-periop-survey']} /> See{' '}
         <Link to="/daily-life">Daily life</Link> for more.
       </p>

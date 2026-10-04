@@ -12,7 +12,10 @@ export default function DailyLife() {
     >
       <Box kind="summary" title="The short version">
         <ul>
-          <li>Rest on the day of surgery. Avoid hard exercise, heavy lifting, and bending over for 1 to 2 weeks.</li>
+          <li>
+            Rest on the day of surgery. For 1 to 2 weeks, do not bend with your head below your waist or lift more than
+            10 pounds.
+          </li>
           <li>You can usually shower after the first 24 to 48 hours. Do not soak the wound.</li>
           <li>Sleep with your head raised if the wound is on your head or face.</li>
           <li>Do not smoke. Smoking slows healing.</li>
@@ -25,24 +28,37 @@ export default function DailyLife() {
         The first 48 hours matter most. Plan to rest for the rest of the day of surgery.
         <Cite id="dartmouth-mohs-handbook" />
       </p>
-      <p>
-        For about 1 to 2 weeks, avoid hard exercise, heavy lifting, and bending over. These raise your heart rate and
-        pull on the wound. That can cause bleeding, swelling, or open the stitches.{' '}
-        <Cite id={['bunick-2011-hemorrhagic', 'ucla-mohs-faq', 'dartmouth-mohs-handbook']} />
-      </p>
-      <p>Surgeons give different limits. Two examples from major medical centers:</p>
-      <ul>
+      <p>The right limits depend on where your wound is. For about 1 to 2 weeks:</p>
+      <ol className="steps">
         <li>
-          No bending, heavy lifting, or hard activity for 1 week. No aerobic exercise or weight lifting for 2 weeks.
-          <Cite id="roswell-mohs" />
+          <strong>Do not bend over so your head goes below your waist.</strong>
+          This matters most for wounds on the face, scalp, or neck. To pick something up, squat down by bending your
+          knees and keep your head up.
+          <Cite id={['ummc-mohs', 'ucla-mohs-faq']} />
         </li>
         <li>
-          Do not lift more than 10 pounds for 1 to 2 weeks.
+          <strong>Do not lift or carry more than about 10 pounds.</strong>
+          That is about the weight of a gallon of milk or a small baby. Ask someone else to carry young children,
+          groceries, and laundry.
           <Cite id="dartmouth-mohs-handbook" />
         </li>
-      </ul>
+        <li>
+          <strong>Skip hard exercise.</strong>
+          This includes running, weight lifting, and yard work.
+          <Cite id={['roswell-mohs', 'dartmouth-mohs-handbook']} />
+        </li>
+        <li>
+          <strong>Avoid moves that stretch the wound.</strong>
+          For a wound on an arm, leg, or the body, avoid movements that pull on it.
+          <Cite id={['bunick-2011-hemorrhagic', 'mp-flaps']} />
+        </li>
+      </ol>
       <p>
-        These limits come from surgeons' experience, and there is little research on them.{' '}
+        Bending over, lifting, and hard exercise can cause bleeding and swelling, and can pull the wound open.
+        <Cite id={['ucla-mohs-faq', 'bunick-2011-hemorrhagic', 'dartmouth-mohs-handbook']} />
+      </p>
+      <p>
+        These limits come from surgeons' experience, and there is little research on them.
         <Cite id="erickson-2022-periop-survey" /> Your surgeon may give you different limits based on where your wound
         is. Follow theirs.
       </p>

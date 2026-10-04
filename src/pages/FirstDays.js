@@ -16,7 +16,7 @@ export default function FirstDays() {
             Leave the bandage from the clinic on and keep it dry for as long as your surgeon said. This is usually 24 to
             48 hours.
           </li>
-          <li>Rest. Do not bend over, lift heavy things, or exercise.</li>
+          <li>Rest. Do not bend over with your head below your waist, lift heavy things, or exercise.</li>
           <li>If the wound bleeds, press on it firmly for 20 minutes by the clock without lifting to check.</li>
           <li>Keep taking medicines your doctor prescribed, including blood thinners, unless you were told to stop.</li>
           <li>Swelling and bruising are normal. They are usually worst around day 2.</li>
@@ -131,8 +131,10 @@ export default function FirstDays() {
       <h2>Rest</h2>
       <p>
         Plan to rest for the rest of the day of surgery. The first 48 hours matter most.
-        <Cite id={['dartmouth-mohs-handbook', 'ucla-mohs-faq']} /> Do not bend over, lift heavy things, or exercise.
-        These raise your blood pressure and can start bleeding.
+        <Cite id={['dartmouth-mohs-handbook', 'ucla-mohs-faq']} /> Do not bend over so your head goes below your waist.
+        Do not lift anything heavier than a gallon of milk, about 10 pounds, or exercise.{' '}
+        <Cite id={['ummc-mohs', 'dartmouth-mohs-handbook']} />
+        These can start bleeding and swelling.
         <Cite id="bunick-2011-hemorrhagic" /> For how long to keep this up, see <Link to="/daily-life">Daily life</Link>
         .
       </p>
